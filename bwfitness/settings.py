@@ -63,7 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "allauth.account.middleware.AccountMiddleware",             # allauth middleware
+    "allauth.account.middleware.AccountMiddleware",             # django-allauth middleware
     "django_browser_reload.middleware.BrowserReloadMiddleware", # django-browser-reload
 ]
 
@@ -161,3 +161,8 @@ ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 DEFAULT_FORM_EMAIL = "admin@bwfitness.com"
+
+
+# tailwind config
+TAILWIND_INPUT_FILE = os.path.join(STATICFILES_DIRS[0], "css", "input.css")
+TAILWIND_OUTPUT_FILE = os.path.join(STATICFILES_DIRS[0], "css", "main.css")
