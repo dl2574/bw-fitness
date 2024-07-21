@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Digital ORM{% endblock title %}</title>
+    <title>{% block title %}Fitness Tracker{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 </head>
-<body>
+<body class="">
+    {% include "partials/navbar.html" %}
     {% block content %}{% endblock content %}
+    {% include "partials/footer.html" %}
 </body>
 </html>
