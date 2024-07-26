@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "django_browser_reload",
+    "crispy_forms",
+    "crispy_tailwind",
     
     
     # Local
@@ -170,3 +172,7 @@ DEFAULT_FORM_EMAIL = "admin@bwfitness.com"
 # tailwind config
 TAILWIND_INPUT_FILE = os.path.join(STATICFILES_DIRS[0], "css", "input.css")
 TAILWIND_OUTPUT_FILE = os.path.join(STATICFILES_DIRS[0], "css", "main.css")
+
+# Crispy Forms Config
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
